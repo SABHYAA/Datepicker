@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dwu-f7-Iyh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Picker Vc-->
+        <scene sceneID="y0E-9m-7cV">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerId" id="dwu-f7-Iyh" customClass="DatePickerVc" customModule="DatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Zv-2a-xJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="14r-j0-u58"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="51d-As-oNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-ua-f0a">
+                                <rect key="frame" x="20" y="120" width="335" height="166"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-b2-oIz">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lastname:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9co-JR-ucw">
+                                        <rect key="frame" x="0.0" y="34" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DOB:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xiN-ah-Gs5">
+                                        <rect key="frame" x="0.0" y="68" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-ak-7yu">
+                                        <rect key="frame" x="0.0" y="102" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXe-Fv-LLz">
+                                        <rect key="frame" x="0.0" y="136" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gW-d5-jKP">
+                                <rect key="frame" x="10" y="347" width="355" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginBtn:" destination="dwu-f7-Iyh" eventType="touchUpInside" id="wnE-iw-Ekk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gdr-ua-f0a" secondAttribute="trailing" constant="20" id="4Eq-aW-bD5"/>
+                            <constraint firstItem="Gdr-ua-f0a" firstAttribute="top" secondItem="2Zv-2a-xJ8" secondAttribute="bottom" constant="100" id="7L7-My-sqL"/>
+                            <constraint firstItem="Gdr-ua-f0a" firstAttribute="leading" secondItem="51d-As-oNJ" secondAttribute="leading" constant="20" id="RXB-T9-nQC"/>
+                            <constraint firstItem="9gW-d5-jKP" firstAttribute="top" secondItem="Gdr-ua-f0a" secondAttribute="bottom" constant="61" id="SaL-Uz-urZ"/>
+                            <constraint firstItem="9gW-d5-jKP" firstAttribute="leading" secondItem="51d-As-oNJ" secondAttribute="leading" constant="10" id="qf7-hT-kXI"/>
+                            <constraint firstAttribute="trailing" secondItem="9gW-d5-jKP" secondAttribute="trailing" constant="10" id="sJv-TE-YCq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dobTextField" destination="xiN-ah-Gs5" id="1gW-AY-9m9"/>
+                        <outlet property="lastnameTextField" destination="9co-JR-ucw" id="Tbu-3n-p3Y"/>
+                        <outlet property="nameTextField" destination="h4t-b2-oIz" id="WwI-fe-TV1"/>
+                        <outlet property="passwordTextField" destination="VXe-Fv-LLz" id="lwt-ty-tKh"/>
+                        <outlet property="usernameTextField" destination="i2k-ak-7yu" id="Tzn-xT-6Mh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhA-KF-Ypy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+</document>
